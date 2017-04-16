@@ -158,14 +158,30 @@
                                     <constraint firstAttribute="height" constant="220" id="APt-Ft-kzi"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbD-U3-IUw">
+                                <rect key="frame" x="21" y="270" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pjT-Pb-Sel"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="sE8-kd-TWp" firstAttribute="top" secondItem="bMm-my-s2j" secondAttribute="top" id="AUm-mK-MAF"/>
                             <constraint firstItem="sE8-kd-TWp" firstAttribute="leading" secondItem="bMm-my-s2j" secondAttribute="leading" id="Cyf-wJ-b5a"/>
                             <constraint firstAttribute="trailing" secondItem="sE8-kd-TWp" secondAttribute="trailing" id="VkK-N2-GB7"/>
+                            <constraint firstItem="NbD-U3-IUw" firstAttribute="top" secondItem="sE8-kd-TWp" secondAttribute="bottom" constant="50" id="azV-oB-jQC"/>
+                            <constraint firstItem="NbD-U3-IUw" firstAttribute="leading" secondItem="bMm-my-s2j" secondAttribute="leadingMargin" constant="5" id="fQV-uA-djl"/>
+                            <constraint firstItem="NbD-U3-IUw" firstAttribute="trailing" secondItem="bMm-my-s2j" secondAttribute="trailingMargin" constant="5" id="oLg-kR-1mL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblTitleLabelOUTLET" destination="NbD-U3-IUw" id="geV-V3-ekC"/>
+                        <outlet property="webView" destination="sE8-kd-TWp" id="fE4-OX-aZG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYO-4w-C66" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
